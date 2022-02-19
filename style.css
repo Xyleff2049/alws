@@ -1,0 +1,40 @@
+.background-video {
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: -20;
+    pointer-events: none;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+ul.topnav li {float: right;}
+  
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+  
+ul.topnav li a.active {background-color: #04AA6D;}
+  
+ul.topnav li.left {float: left;}
+  
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
