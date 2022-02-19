@@ -17,9 +17,9 @@ ul.topnav {
     top: 0;
     width: 100%;
 }
-  
+
 ul.topnav li {float: right;}
-  
+
 ul.topnav li a {
     display: block;
     color: white;
@@ -27,13 +27,22 @@ ul.topnav li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-  
+
+ul.topnav li.logo {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 2px 16px;
+}
+
 ul.topnav li a:hover:not(.active) {background-color: #111;}
-  
+
 ul.topnav li a.active {background-color: #04AA6D;}
-  
+
 ul.topnav li.left {float: left;}
-  
+
 @media screen and (max-width: 600px) {
     ul.topnav li.right, 
     ul.topnav li {float: none;}
