@@ -1,4 +1,4 @@
-.background-video {
+#background-video {
     left: 0;
     top: 0;
     width: 100%;
@@ -46,4 +46,10 @@ ul.topnav li.left {float: left;}
 @media screen and (max-width: 600px) {
     ul.topnav li.right, 
     ul.topnav li {float: none;}
+}
+
+#audio-control {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
 }
