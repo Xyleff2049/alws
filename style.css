@@ -7,6 +7,15 @@
     pointer-events: none;
 }
 
+#banner-video {
+    left: 0;
+    top: 30px;
+    width: 100%;
+    position: absolute;
+    z-index: -20;
+    pointer-events: none;
+}
+
 ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -95,7 +104,17 @@ div.lname {
     justify-content: space-evenly;
 }
 
-.project-buttons button {
+.project-buttons a {
     width: 20rem;
     height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.white-banner {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    z-index: -10;
 }
