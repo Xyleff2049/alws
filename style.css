@@ -53,3 +53,49 @@ ul.topnav li.left {float: left;}
     right: 15px;
     bottom: 15px;
 }
+
+form {
+    width: 75%;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+input.message {
+    min-height: 100px;
+}
+
+div.fullname {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.fname {
+    float: left;
+    width: 45%;
+}
+
+div.lname {
+    float: right;
+    width: 45%;
+}
+
+.project-buttons {
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-buttons button {
+    width: 20rem;
+    height: 5rem;
+}

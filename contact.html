@@ -15,8 +15,25 @@
         <li class="left logo">ALWS</li>
     </ul>
 
-    <video id="background-video" autoplay muted loop>
-        <source src="./teaser.mp4" type="video/mp4"/>
-        Votre navigateur ne supporte pas la vidéo.
-    </video>
+    <form action="./send.php">
+        <div class="fullname">
+            <div class="fname">
+                <label for="fname">Prénom :</label><br>
+                <input type="text" id="fname" name="fname"><br><br>
+            </div>
+            <div class="lname">
+                <label for="lname">Nom :</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+            </div>
+        </div>
+        <div>
+            <label for="email">Email :</label><br>
+            <input type="text" id="email" name="email"><br><br>
+            <label for="subject">Sujet :</label><br>
+            <input type="text" id="subject" name="subject"><br><br>
+            <label for="message">Message :</label><br>
+            <textarea name="message" cols="40" rows="5"></textarea><br><br>
+            <input type="submit" value="Envoyer" class="btn btn-dark">
+        </div>
+    </form>
 </body>
