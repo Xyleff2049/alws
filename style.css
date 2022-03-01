@@ -1,3 +1,8 @@
+body {
+    background-color: black;
+    color: white;
+}
+
 #background-video {
     left: 0;
     top: 0;
@@ -71,16 +76,16 @@ form {
     text-align: center;
 }
 
-input {
+form label {
+    font-size: 20px;
+}
+
+form input {
     width: 100%;
 }
 
-textarea {
+form textarea {
     width: 100%;
-}
-
-input.message {
-    min-height: 100px;
 }
 
 div.fullname {
@@ -112,9 +117,9 @@ div.lname {
     justify-content: space-around;
 }
 
-div.white {
+div.black {
     position: absolute;
-    background-color: white;
+    background-color: black;
     width: 100%;
     z-index: -10;
 }
