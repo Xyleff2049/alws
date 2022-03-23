@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+ul.topnav {
+    list-style-type: none;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+ul.topnav li {float: right;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.logo {
+    width: fit-content;
+    position: relative;
+    font-family: "Arial Black";
+    font-size: 4vw;
+    z-index: 20;
+    line-height: 1;
+    margin-left: 1vw;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: white; color: black;}
+
+ul.topnav li.left {float: left;}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+h1, h3 {
+    width: fit-content;
+    margin: auto;
+}

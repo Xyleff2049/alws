@@ -13,12 +13,18 @@
 }
 .image-slide {
     width: 20%;
-    float: left;
-}
-.image-slide img {
-    width: 100%;
     height: 250px;
-    object-fit: cover;
+    float: left;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 85px;
+    font-size: 60px;
+}
+.image-slide:hover {
+    color: white;
 }
 .image-slide,
 .radio,
@@ -51,7 +57,7 @@
 #slide1:checked ~ .radio .radio-btn:nth-child(1),
 #slide2:checked ~ .radio .radio-btn:nth-child(2),
 #slide3:checked ~ .radio .radio-btn:nth-child(3) {
-    background: #04AA6D;
+    background: white;
 }
 .radio-btn {
     width: 9px;
@@ -69,7 +75,7 @@
 /* Calculate AUTOPLAY for BULLETS */
 @keyframes bullet {
     0%, 33.32333333333334%	{
-        background: #04AA6D;
+        background: white;
     }
     33.333333333333336%, 100% {
         background: gray;
