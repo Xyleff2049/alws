@@ -1,6 +1,6 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #background-video {
@@ -44,6 +44,7 @@ ul.topnav li a {
 }
 
 .logo {
+    color: white;
     width: fit-content;
     position: relative;
     font-family: "Arial Black";
@@ -72,14 +73,14 @@ ul.topnav li.left {float: left;}
 
 .projects {
     display: flex;
-    justify-content: space-around;
-    height: 650px;
+    justify-content: space-evenly;
+    height: 500px;
     background-color: white;
 }
 
 .projects a {
     margin-top: 100px;
-    width: 40%;
+    width: 30%;
     transition: transform .1s;
     display: flex;
     justify-content: center;
@@ -132,9 +133,10 @@ div.lname {
     width: 45%;
 }
 
-div.black {
+div.white {
     position: absolute;
-    background-color: black;
+    background-color: white;
+    color: black;
     width: 100%;
     z-index: -10;
     padding: 25px;

@@ -1,6 +1,6 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 ul.topnav {
@@ -26,6 +26,7 @@ ul.topnav li a {
 }
 
 .logo {
+    color: white;
     width: fit-content;
     position: relative;
     font-family: "Arial Black";
