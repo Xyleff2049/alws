@@ -12,13 +12,12 @@ body {
     pointer-events: none;
 }
 
-#banner-video {
+#banner-image {
     left: 0;
     top: -150px;
     width: 100%;
     position: absolute;
     z-index: -20;
-    pointer-events: none;
 }
 
 ul.topnav {
