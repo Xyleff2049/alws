@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+ul.topnav {
+    list-style-type: none;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.logo {
+    margin: auto;
+    width: fit-content;
+    position: relative;
+    font-family: "Arial Black";
+    font-size: 6vw;
+    z-index: 1;
+    line-height: 1;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: white; color: black;}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+#background-video {
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: -20;
+    pointer-events: none;
+}

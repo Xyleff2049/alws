@@ -27,7 +27,7 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -43,18 +43,19 @@ ul.topnav li a {
     text-decoration: none;
 }
 
-ul.topnav li.logo {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-    padding: 2px 16px;
+.logo {
+    width: fit-content;
+    position: relative;
+    font-family: "Arial Black";
+    font-size: 4vw;
+    z-index: 20;
+    line-height: 1;
+    margin-left: 1vw;
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
 
-ul.topnav li a.active {background-color: #04AA6D;}
+ul.topnav li a.active {background-color: white; color: black;}
 
 ul.topnav li.left {float: left;}
 
@@ -67,6 +68,33 @@ ul.topnav li.left {float: left;}
     position: absolute;
     right: 15px;
     bottom: 15px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    height: 650px;
+    background-color: white;
+}
+
+.projects a {
+    margin-top: 100px;
+    width: 40%;
+    transition: transform .1s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Bebas Neue";
+    line-height: normal;
+}
+
+.projects a:hover {
+    transform: scale(1.1);
 }
 
 form {
