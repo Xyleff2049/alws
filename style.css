@@ -1,6 +1,7 @@
 body {
     background-color: white;
     color: black;
+    font-size: 1rem;
 }
 
 #background-video {
@@ -47,7 +48,7 @@ ul.topnav li a {
     width: fit-content;
     position: relative;
     font-family: "Arial Black";
-    font-size: 4vw;
+    font-size: 52px;
     z-index: 20;
     line-height: 1;
     margin-left: 1vw;
