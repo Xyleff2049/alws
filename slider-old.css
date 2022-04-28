@@ -1,0 +1,137 @@
+.images {
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.images-inner {
+    width: 500%;
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+.image-slide {
+    width: 20%;
+    height: 500px;
+    float: left;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 175px;
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.image-slide:hover {
+    color: white;
+}
+.image-slide,
+.radio,
+.radio-btn {
+    transition: all 0.5s ease-out;
+}
+.radio {
+    float: right;
+    margin-right: 5px;
+}
+.arrows {
+    width: 48px;
+    height: 48px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+}
+
+.prev {
+    margin-left: 20px;
+    border-bottom: 6px solid;
+    border-left: 6px solid;
+    transform: rotate(45deg);
+    left: 10px;
+}
+   
+.next {
+    margin-right: 20px;
+    border-bottom: 6px solid;
+    border-left: 6px solid;
+    transform: rotate(-135deg);
+    right: 10px;
+}
+
+
+
+/* Move slides overflowed container */
+#slide1:checked ~ .images .images-inner {
+    margin-left: 0;
+}
+#slide2:checked ~ .images .images-inner {
+    margin-left: -100%;
+}
+#slide3:checked ~ .images .images-inner {
+    margin-left: -200%;
+}
+  
+  
+  
+  
+/* Color of bullets */
+#slide1:checked ~ .radio .radio-btn:nth-child(1),
+#slide2:checked ~ .radio .radio-btn:nth-child(2),
+#slide3:checked ~ .radio .radio-btn:nth-child(3) {
+    background: black;
+}
+.radio-btn {
+    width: 9px;
+    height: 9px;
+    border-radius: 5px;
+    background: gray;
+    display: inline-block !important;
+    margin: 0 1px;
+    cursor: pointer;
+}
+/* Color of bullets - END */
+  
+  
+  
+/* Calculate AUTOPLAY for BULLETS */
+@keyframes bullet {
+    0%, 33.32333333333334%	{
+        background: black;
+    }
+    33.333333333333336%, 100% {
+        background: gray;
+    }
+}
+  
+  
+#play1:checked ~ .radio .radio-btn:nth-child(1) {
+    animation: bullet 12300ms infinite -1000ms;
+}
+  
+#play1:checked ~ .radio .radio-btn:nth-child(2) {
+    animation: bullet 12300ms infinite 3100ms;	
+}
+  
+#play1:checked ~ .radio .radio-btn:nth-child(3) {
+    animation: bullet 12300ms infinite 7200ms;	
+}
+/* Calculate AUTOPLAY for BULLETS - END */
+
+
+
+
+/* Calculate AUTOPLAY for SLIDES */
+@keyframes slide {
+    0%, 25.203252032520325%	{ margin-left: 0; }
+    33.333333333333336%, 58.53658536585366%	{ margin-left: -100%; }
+    66.66666666666667%, 91.869918699187%	{ margin-left: -200%; }
+}
+  
+  
+.slider > #play1:checked ~ .images .images-inner {
+    animation: slide 12300ms infinite;	
+}
+/* Calculate AUTOPLAY for SLIDES - END */
