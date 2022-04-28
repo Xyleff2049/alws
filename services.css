@@ -1,0 +1,48 @@
+.cubes {
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+    background-color: white;
+}
+
+.cubes a {
+    margin-top: 100px;
+    width: 30%;
+    transition: transform .1s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Bebas Neue";
+    line-height: normal;
+}
+
+.cubes a:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    text-align: center;
+}
+
+.inst {
+    margin-top: 25px;
+    width: 100%;
+    height: 25px;
+}
+  
+.transform {
+    -webkit-transition: all 1s ease;  
+    -moz-transition: all 1s ease;  
+    -o-transition: all 1s ease;  
+    -ms-transition: all 1s ease;  
+    transition: all 1s ease;
+}
+  
+.transform-active {
+    height: 50px;
+}
