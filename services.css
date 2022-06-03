@@ -57,16 +57,17 @@
 }
 
 .inst .film h1 {
-    padding-top: 64px;
+    padding-top: 50px;
     padding-left: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     margin-bottom: 0;
-    font-size: 64px;
+    font-size: 44px;
 }
 
 .inst .film div {
-    padding-top: 10px;
     padding-left: 25px;
+    padding-top: 5px;
+    font-size: 14px;
 }
 
 .inst-active {
@@ -100,7 +101,7 @@
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
     
-    height: 15vw;
+    height: 50%;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -108,11 +109,24 @@
     right: -250px;
     top: 25%;
     z-index: 1;
-    opacity: 50%; 
+    opacity: 10%; 
     list-style-type: none;
     padding: 5px;
     margin: 0;
     background-color: black;
+    font-family: "Bebas Neue";
+}
+
+.sidenav-button {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sidenav-button-active {
+    background-color: crimson;
 }
 
 .sidenav-active {
