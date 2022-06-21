@@ -1,0 +1,29 @@
+.gazette {
+    height: 50vh;
+}
+
+.articles {
+    padding-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.article {
+    width: 30%;
+    transition: transform .1s;
+    font-size: larger;
+}
+
+.article:hover {
+    transform: translateY(-5vh);
+}
+
+.article img {
+    max-height: 30vh;
+}
+
+h1 {
+    padding-left: 0.75vw;
+    padding-top: 1vh;
+    margin: 0;
+}
