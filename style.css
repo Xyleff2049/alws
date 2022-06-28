@@ -13,14 +13,6 @@ body {
     pointer-events: none;
 }
 
-#banner-image {
-    left: 0;
-    top: -150px;
-    width: 100%;
-    position: absolute;
-    z-index: -20;
-}
-
 ul.topnav {
     list-style-type: none;
     top: 0;
@@ -117,13 +109,17 @@ form textarea {
     width: 100%;
 }
 
-div.white {
-    position: absolute;
-    background-color: white;
-    color: black;
+.about {
+    height: 100vh;
+}
+
+.about img {
+    height: 50%;
     width: 100%;
-    z-index: -10;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
+    object-fit: cover;
+}
+
+.about div {
+    padding-left: 2vw;
+    padding-top: 3vh;
 }
