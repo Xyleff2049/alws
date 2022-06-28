@@ -1,5 +1,6 @@
 .gazette {
     height: 50vh;
+    margin-top: 4vh;
 }
 
 .articles {
@@ -24,6 +25,5 @@
 
 h1 {
     padding-left: 0.75vw;
-    padding-top: 1vh;
     margin: 0;
 }
