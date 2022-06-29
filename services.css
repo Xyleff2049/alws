@@ -1,3 +1,9 @@
+ul.topnav {
+    background-image: repeating-linear-gradient(-223deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 0px, transparent 2px);
+    background-color: black;
+    background-size: 20px;
+}
+
 .cubes {
     display: flex;
     justify-content: space-evenly;
