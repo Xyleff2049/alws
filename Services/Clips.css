@@ -1,0 +1,41 @@
+.title {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    font-size: 25vw;
+    line-height: 100vh;
+    font-family: "Bebas Neue";
+    text-align: center;
+    color: white;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel {
+    margin-top: 100vh;
+}
+
+.carousel-caption {
+    bottom: auto;
+    top: 10vh;
+    text-align: justify;
+}
+
+.carousel-caption p {
+    margin-top: 3vh;
+}
+
+.carousel-inner img {
+    height: 100vh;
+}
