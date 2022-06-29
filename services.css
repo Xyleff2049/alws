@@ -75,23 +75,23 @@
 }
 
 #pubs {
-    background-image: url("prods/conduite.png");
+    background-image: url("Productions/conduite.png");
 }
 
 #brand {
-    background-image: url("prods/canap.png");
+    background-image: url("Productions/canap.png");
 }
 
 #events {
-    background-image: url("prods/lester.png");
+    background-image: url("Productions/lester.png");
 }
 
 #mark {
-    background-image: url("prods/danse.png");
+    background-image: url("Productions/danse.png");
 }
 
 #part {
-    background-image: url("prods/gang.png");
+    background-image: url("Productions/gang.png");
 }
 
 .sidenav {
