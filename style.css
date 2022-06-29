@@ -19,7 +19,7 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color: rgb(0, 0, 0, 0.25);
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -38,12 +38,12 @@ ul.topnav li a {
 .logo {
     color: white;
     width: fit-content;
-    position: relative;
+    position: absolute;
     font-family: "Arial Black";
     font-size: 52px;
-    z-index: 20;
     line-height: 1;
-    margin-left: 1vw;
+    left: 0.65vw;
+    top: -0.35vh;
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
@@ -88,25 +88,6 @@ ul.topnav li.left {float: left;}
 
 .projects a:hover {
     transform: scale(1.1);
-}
-
-form {
-    width: 75%;
-    margin-top: 75px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-form label {
-    font-size: 20px;
-}
-
-form input {
-    width: 100%;
-}
-
-form textarea {
-    width: 100%;
 }
 
 .about {

@@ -1,0 +1,56 @@
+ul.topnav {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.titre {
+    height: 50vh;
+    font-size: 5vw;
+    font-weight: 600;
+    color: white;
+    background-image: repeating-linear-gradient(-223deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 0px, transparent 2px);
+    background-color: black;
+    background-size: 20px;
+}
+
+.inner-titre {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.coordonnees {
+    height: 50vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form {
+    width: 75%;
+    height: 75vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label {
+    font-size: 20px;
+}
+
+form input {
+    width: 100%;
+}
+
+form textarea {
+    width: 100%;
+}
+
+.reseaux {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
