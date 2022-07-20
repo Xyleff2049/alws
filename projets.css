@@ -3,3 +3,27 @@ ul.topnav {
     background-color: black;
     background-size: 20px;
 }
+
+#prods {
+    font-size: 3vw;
+}
+
+#services {
+    font-size: 6vw;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li a {
+        height: calc(35vh / 5);
+        line-height: calc(35vh / 5);
+    }
+    
+    .projects {
+        height: 50vh;
+        margin-top: 30vh;
+    }
+
+    #prods {
+        font-size: 6vw;
+    }
+}

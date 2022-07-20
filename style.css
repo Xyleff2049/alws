@@ -4,6 +4,13 @@ body {
     font-size: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+    #background-video {
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
 #background-video {
     left: 0;
     top: 0;
@@ -11,6 +18,10 @@ body {
     position: fixed;
     z-index: -20;
     pointer-events: none;
+}
+
+.logo-banner {
+    display: none;
 }
 
 ul.topnav {
@@ -55,6 +66,29 @@ ul.topnav li.left {float: left;}
 @media screen and (max-width: 600px) {
     ul.topnav li.right, 
     ul.topnav li {float: none;}
+    ul.topnav {
+        display: flex;
+        flex-direction: column-reverse;
+        top: 10vh;
+    }
+    ul.topnav li a {
+        height: calc(75vh / 5);
+        line-height: calc(75vh / 5);
+        padding: 0;
+    }
+    .logo-banner {
+        display: block;
+        background-color: black;
+        height: 10vh;
+        color: white;
+        font-family: "Arial Black";
+        font-size: 52px;
+        line-height: 10vh;
+        text-align: center;
+    }
+    .logo {
+        display: none;
+    }
 }
 
 #audio-control {
